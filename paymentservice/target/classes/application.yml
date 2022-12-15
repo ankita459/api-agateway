@@ -1,0 +1,20 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: microservice2
+  data:
+    mongodb:
+      uri:  mongodb://localhost:27017/test
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone : http://localhost:8761/eureka/
+  instance:
+      hostname: localhost  
+
+    
